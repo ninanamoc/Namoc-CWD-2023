@@ -1,0 +1,13 @@
+h1 {
+    color: #212121;
+    font-weight: bold;
+}
+
+p {
+    color: #212121;
+    font-weight: normal;
+}
+
+.font-family {
+    font-family:'Times New Roman', Times, serif
+}

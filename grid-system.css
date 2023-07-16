@@ -1,0 +1,29 @@
+h1 {
+    color: #ffffff;
+    font-family:'Times New Roman', Times, serif
+}
+
+h3 {
+    color: #ffffff;
+    font-family:'Times New Roman', Times, serif
+}
+
+h5 {
+    Color: #cddc39 
+}
+
+p {
+    color:#ffffff;
+}
+
+.font-weight {
+    font-weight: 500;
+}
+
+.font-size {
+    font-size: 80%;
+}
+
+.canva-padding {
+    padding: 20px 10px 0px 0;
+}

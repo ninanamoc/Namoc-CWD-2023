@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/195b4afa65.js" crossorigin="anonymous"></script>
+    <!--cdnjs - fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="grid-system.css">
+    <title>Grid System</title>
+</head>
+<body class="grey darken-2">
+    <h1 class="center black-text">Grid System</h1>
+    <div class="divider lime"></div>
+    <br>
+    <div class="row">
+        <div class="col s9 m9">
+            <div class="container">
+                <p>We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.</p>
+                <br>
+                <h3>Container</h3>
+                <p>The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.</p>
+                <br>
+                <p class="flow-text">Demo</p>
+                <p>Try the button below to see what the page looks like without containers.</p>
+                <button class="btn cyan font-size"><i class="fa-solid fa-eye-slash left"></i>TURN OF CONTAINERS</button>
+                <br><br>
+                <img class="responsive-img" src="Images/web-sample.jpg">
+
+                <!--Introduction-->
+                <h1 class="center z-depth-4">12 Columns</h1>
+                <div class="divider cyan"></div>
+                <div class="row">
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>3</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>4</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>5</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>6</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>7</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>8</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>9</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>10</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>11</span>
+                        </div>
+                    </div>
+                    <div class="col m2 l1">
+                        <div class="card-panel cyan">
+                            <span>12</span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col s6">
+                        <div class="card-panel cyan">
+                            <span>6</span>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card-panel cyan">
+                            <span>6</span>
+                        </div>
+                    </div>
+                </div>
+                <!--Offsets-->
+                <br><br><br>
+                <h1 class="center z-depth-4">Offsets</h1>
+                <div class="divider cyan"></div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel cyan">
+                            <span>12 columns</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col box s6 offset-s6 ">
+                        <div class="card-panel lime">
+                            <span>s6 offset-s6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col box s6 offset-s4 ">
+                        <div class="card-panel lime">
+                            <span>s6 offset-s4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col box s6 offset-s3 ">
+                        <div class="card-panel lime">
+                            <span>s6 offset-s3s</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <br><br><br>
+                <h1 class="center z-depth-4">Push and Pull</h1>
+                <div class="divider cyan"></div>
+                <p>You can easily change the order of your columns with push and pull. Simply add push-s2 or pull-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to push or pull by.</p>
+                <br><br>
+                <!--Push and Pull-->
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel cyan">
+                            <h5 class="center font-weight">TITLE</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s4 push-s8">
+                        <div class="card-panel lime darken-3">
+                            <h6 class="center font-weight">SUBTITLE</h6>
+                        </div>
+                    </div>
+                    <div class="col s8 pull-s4">
+                        <div class="card-panel lime">
+                            <h6 class="center font-weight">SUBTITLE</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s4">
+                        <div class="card-panel green">
+                            <h6 class="center font-weight">BODY</h6>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="card-panel green">
+                            <h6 class="center font-weight">BODY</h6>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="card-panel green darken-3">
+                            <h6 class="center font-weight">BODY</h6>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <br><br><br>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel cyan"><span>12 columns</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s7 push-s5">
+                        <div class="card-panel cyan"><span>7 columns</span></div>
+                    </div>
+                    <div class="col s5 pull-s7">
+                        <div class="card-panel cyan"><span>5 columns</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6 push-s6">
+                        <div class="card-panel cyan"><span>6 columns</span></div>
+                    </div>
+                    <div class="col s6 pull-s6">
+                        <div class="card-panel cyan"><span>6 columns</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s5 push-s7">
+                        <div class="card-panel cyan"><span>6 columns</span></div>
+                    </div>
+                    <div class="col s7 pull-s5">
+                        <div class="card-panel cyan"><span>6 columns</span></div>
+                    </div>
+                </div>
+        
+                <!--Creating Layouts-->
+                <br><br><br>
+                <h1 class="center z-depth-4">Creating Layouts</h1>
+                <div class="divider cyan"></div>
+                <div class="section">
+                    <h5>Section 1</h5>
+                    <p>Content</p>
+                </div>
+                <div class="divider cyan"></div>
+                <div class="section">
+                    <h5>Section 2</h5>
+                    <p>Content</p>
+                </div>
+                <div class="divider cyan"></div>
+                <div class="section">
+                    <h5>Section 3</h5>
+                    <p>Content</p>
+                </div>
+                <!--Promotion Table-->
+                <h4 class="white-text">Promotion table</h4>
+                <div class="row">
+                    <div class="col s4">
+                        <div class="card-panel cyan z-depth-4">
+                            <h5><p class="font-family white-text">Section 1</p></h5>
+                            <p class="font-family white-text">Content</p>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="card-panel cyan z-depth-4">
+                            <h5><p class="font-family white-text">Section 1</p></h5>
+                            <p class="font-family white-text">Content</p>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="card-panel cyan z-depth-4">
+                            <h5><p class="font-family white-text">Section 1</p></h5>
+                            <p class="font-family white-text">Content</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!--Creating Responsive Layouts-->
+                <br><br><br>
+                <h1 class="center z-depth-4">Creating Responsive Layouts</h1>
+                <div class="divider cyan"></div>
+                <!--Adding Responsiveness-->
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel cyan">
+                            <span class="flow-text">col s12</span>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l8">
+                        <div class="card-panel cyan">
+                            <span class="flow-text">col s12 m6 l8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s4 m3 l4">
+                        <div class="card-panel lime darken-3 z-depth-3">
+                            <span class="flow-text">col s4 m3 l4</span>
+                        </div>
+                    </div>
+                    <div class="col s4 m6 l4">
+                        <div class="card-panel lime z-depth-3">
+                            <span class="flow-text">col s4 m6 l4</span>
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l4">
+                        <div class="card-panel lime darken-3 z-depth-3">
+                            <span class="flow-text">col s4 m3 l4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+            <div class="col s3 m3">
+                <img class="responsive-img canva-padding" src="Images/canva.png">
+            </div>
+            <br>
+            <a href="" class="canva-link lime-text">What will you design today?</a>
+    </div>
+
+
+
+    <div style="height: 1000px;"></div>
+</body>
+</html>

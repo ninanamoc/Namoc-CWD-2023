@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/195b4afa65.js" crossorigin="anonymous"></script>
+    <!--cdnjs - fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<body class="deep-orange lighten-2">
+    <h1 class="center">Navbar</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m10">
+                <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+                <h4 class="font-family">Right Aligned Links</h4>
+                <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+            </div>
+        </div>
+<!--Right Aligned Links-->
+        <nav class="black">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo"><i class="fa-solid fa-leaf"></i></a>
+                <ul id="nav-mobile" class="right show-on-small">
+                    <li><a href="">Summer</a></li>
+                    <li><a href="">Winter</a></li>
+                    <li><a href="">Autumn</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+            <div class="col s12 m10">
+                <h4 class="font-family">Left Aligned Links</h4>
+                <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+            </div>
+        </div>
+<!--Left Aligned Links-->
+        <nav class="black">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo right"><i class="fa-solid fa-leaf"></i></a>
+                <ul id="nav-mobile" class="left show-on-small">
+                    <li><a href="">Summer</a></li>
+                    <li><a href="">Winter</a></li>
+                    <li><a href="">Autumn</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+            <div class="col s12 m10">
+                <h4 class="font-family">Centering the logo</h4>
+                <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo">. You will have to make sure yourself that links do not overlap if you use this.</p>
+            </div>
+        </div>
+<!--Centering the logo-->
+        <nav class="black">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo center"><i class="fa-solid fa-leaf"></i></a>
+                <ul id="nav-mobile" class="left show-on-small">
+                    <li><a href="">Summer</a></li>
+                    <li><a href="">Winter</a></li>
+                    <li><a href="">Autumn</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+            <div class="col s12 m10">
+                <h4 class="font-family">Active Items</h4>
+                <p>Add active class to your li tags to denote the current page.</p>
+            </div>
+        </div>
+<!--Active Items-->
+        <nav class="grey darken-3">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo right"><i class="fa-solid fa-leaf"></i></a>
+                <ul id="nav-mobile" class="left show-on-small">
+                    <li class=""><a href="">Summer</a></li>
+                    <li class=""><a href="">Winter</a></li>
+                    <li class="active"><a href="">Autumn</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+            <div class="col s12 m10">
+                <h4 class="font-family">Extended Navbar with Tabs</h4>
+                <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+            </div>
+        </div>
+<!--Extended Navbar with Tabs-->
+        <nav class="black nav-extended">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo"><i class="fa-solid fa-leaf"></i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-book"></i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a href="#summer">Summer</a></li>
+                    <li class="tab"><a href="#winter">Winter</a></li>
+                    <li class="tab"><a href="#autumn">Autumn</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--sidenav structure-->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="">Contact</a></li>
+            <li><a href="">Info</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <!--Tabs structure-->
+        <div id="summer" class="col s12">
+            <img src="Images/summer.jpg" alt="" class="responsive-img">
+        </div>
+        <div id="winter" class="col s12">
+            <img src="Images/winter.jpg" alt="" class="responsive-img">
+        </div>
+        <div id="autumn" class="col s12">
+            <img src="Images/autumn.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+
+    <div style="height: 1000px;"></div>
+    
+    <!--Jquery CDN-->
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        //sidenav init
+            $('.sidenav').sidenav({
+                edge: 'left',
+                inDuration: 1000,
+                outDuration: 1000
+            });
+            $('.tabs').tabs();
+        });
+    </script>
+</body>
+</html>
