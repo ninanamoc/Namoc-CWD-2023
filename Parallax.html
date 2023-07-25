@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/195b4afa65.js" crossorigin="anonymous"></script>
+    <!--cdnjs - fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="Parallax.css">
+    <title>Parallax and Modals</title>
+</head>
+<body class="red accent-1">
+    <div class="section red lighten-5 z-depth-3 container-height">
+        <div class="row container">
+            <h3 class="header center font-family">Parallax</h3>
+        </div>
+    </div>
+    <div class="container">
+        <p>Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    </div>
+    <!--Parallax-->
+    <div class="parallax-container">
+        <div class="parallax"><img src="Images/autumn.jpg" class="responsive-img"></div>
+    </div>
+    <div class="section red lighten-5 z-depth-3 container-height2">
+        <div class="container">
+            <h3 class="font-family">Parallax Customization</h3>
+            <p>The parallax container height is what defines how much of the image can be seen. This is set to a default of 500px. You can add your own style to override this.</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="Images/summer.jpg" class="responsive-img"></div>
+    </div>
+    <br><br>
+
+    <!--Modals-->
+    <div class="container">
+        <h3 class="font-family center">Modals</h3>
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eligendi?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-red accent-1 btn-flat">Agree</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 1000px;"></div>
+
+    <!--Jquery CDN-->
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('.parallax').parallax();
+            //Modals Init
+            $('.modal').modal();
+        });
+    </script>
+</body>
+</html>
